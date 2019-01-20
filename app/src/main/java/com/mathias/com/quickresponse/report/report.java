@@ -1,3 +1,4 @@
+
 package com.mathias.com.quickresponse.report;
 
 import android.os.Bundle;
@@ -8,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import com.mathias.com.quickresponse.R;
 
 import org.json.JSONArray;
@@ -25,8 +27,8 @@ public class report extends AppCompatActivity {
         TextView textView = findViewById(R.id.title);
         textView.setText(select);
 
-        loaction = findViewById(R.id.report_address);
-        descupriction = findViewById(R.id.disc);
+       loaction = findViewById(R.id.report_address);
+      descupriction = findViewById(R.id.disc);
         CheckBox checkBox = findViewById(R.id.direction);
         Button summit = findViewById(R.id.summit);
         summit.setOnClickListener(new View.OnClickListener() {

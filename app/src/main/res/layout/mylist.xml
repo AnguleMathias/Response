@@ -13,7 +13,7 @@
         android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_margin="15dp"
-        app:cardBackgroundColor="@color/blue3"
+        app:cardBackgroundColor="@color/blue2"
         app:cardElevation="5dp"
         app:contentPadding="3dp">
 
