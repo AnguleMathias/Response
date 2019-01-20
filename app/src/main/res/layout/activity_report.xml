@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".report.report">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:text="incinnce"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/report_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignParentEnd="true"
+            android:hint="Enter location"
+            android:inputType="number"
+            android:textColor="@color/dack"
+            android:textColorHint="@color/dack" />
+
+        <CheckBox
+            android:id="@+id/direction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="use my present locaation" />
+
+        <EditText
+            android:id="@+id/disc"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_below="@id/title"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:hint="Description"
+
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textAlignment="viewStart"
+            android:textColor="@color/dack"
+            android:textColorHint="@color/dack" />
+
+        <Button
+            android:id="@+id/attach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="attach file" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/allowcall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="call allowed" />
+
+                <RadioButton
+                    android:id="@+id/onlysms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMS allow" />
+
+                <RadioButton
+                    android:id="@+id/noreply"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="no reply" />
+            </LinearLayout>
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/summit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:text="summit" />
+</RelativeLayout>

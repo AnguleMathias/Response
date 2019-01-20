@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="button1">#25AAE3</color>
+    <color name="button2">#29B77B</color>
+    <color name="button3">#DA552A</color>
+    <color name="dack">#343A40</color>
+    <color name="colorPrimary">#30A5FF</color>
+    <color name="colorPrimaryDark">#0084E6</color>
+    <color name="colorAccent">#30A5FF</color>
+    <color name="blue2">#c6302c</color>
+    <color name="blue1">#b9e1ff</color>
+    <color name="blue1o">#ffffff</color>
+    <color name="blue3">#0084E6</color>
+
+</resources>
