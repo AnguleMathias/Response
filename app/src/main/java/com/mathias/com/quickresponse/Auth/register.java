@@ -138,7 +138,7 @@ uploadFile();
                                     emengencyNumber.getText().toString().trim(),
                                      idType.getText().toString().trim(),
                                      idNumber.getText().toString().trim(),
-                                     taskSnapshot.getDownloadUrl().toString());
+                                     taskSnapshot.toString());
 
                              String uploadId = mDatabaseRef.push().getKey();
                              mDatabaseRef.child(uploadId).setValue(profile);

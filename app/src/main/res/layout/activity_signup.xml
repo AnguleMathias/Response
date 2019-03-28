@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:hint="Enter username"
             android:inputType="text"
-            android:textColor="#fff" />
+            android:textColor="#000" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,7 +51,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Enter pin"
                     android:inputType="numberPassword"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Confirm pin"
                     android:inputType="numberPassword"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
 
@@ -92,7 +92,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Enter email address"
                     android:inputType="textEmailAddress"
-                    android:textColor="#fff" />
+                    android:textColor="#000" />
 
             </android.support.design.widget.TextInputLayout>
 
@@ -105,7 +105,7 @@
             android:layout_height="wrap_content"
             android:hint="Enter phone number"
             android:inputType="number"
-            android:textColor="#fff" />
+            android:textColor="#000" />
     </LinearLayout>
 
     <Button
