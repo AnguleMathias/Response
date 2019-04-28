@@ -36,7 +36,7 @@
             android:textColorHint="@color/dack" />
 
         <CheckBox
-            android:id="@+id/direction"
+            android:id="@+id/locationBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:focusable="false"
