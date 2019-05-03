@@ -3,6 +3,7 @@ package com.mathias.com.quickresponse.report;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -51,7 +52,16 @@ public class report extends AppCompatActivity implements LocationListener {
             @Override
             public void onClick(View v) {
 
+                String currentLocation = locationText.getText().toString();
+                String incidentDesc = description.getText().toString();
+                Intent sendIntent = new Intent();
+                sendIntent.setAction(Intent.ACTION_SEND);
+                sendIntent.putExtra(Intent.EXTRA_TEXT, "*Location* \n"+ currentLocation +
+                        "\n *Incident Description* \n" + incidentDesc);
+                sendIntent.setType("text/plain");
+                startActivity(sendIntent);
             }
+
         });
 
         if (ContextCompat.checkSelfPermission(getApplicationContext(),
@@ -80,7 +90,6 @@ public class report extends AppCompatActivity implements LocationListener {
 
 
     }
-
 
 
     void getLocation() {
